@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 80px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,6 +26,20 @@ footer {
   background-color: grey;
 }
 
+.home-main {
+  display: flex;
+  padding: 2vh 8vw;
+}
+.home-main div:first-of-type {
+  width: 50%;
+}
+.home-main div:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50%;
+}
+
 .footer-link {
   text-decoration: none;
   color: unset;
@@ -38,6 +56,18 @@ footer {
 .header-title {
   font-size: 20px;
   text-transform: uppercase;
+}
+
+.home-main-button a {
+  width: 45%;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  padding: 16vh 5vw;
+  margin-bottom: 2vh;
+  border-radius: 30px;
+  background-color: lightblue;
 }
 
 /*# sourceMappingURL=import.css.map */
