@@ -11,6 +11,22 @@ header {
   background-color: grey;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  padding-top: 2vh;
+  background-color: grey;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: unset;
+}
+
 .header-nav a {
   text-decoration: none;
   text-transform: uppercase;
