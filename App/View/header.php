@@ -12,7 +12,7 @@
             <nav class="header-nav">
                 <a href="?page=thematiques">Thématiques</a>
                 <a href="?page=classement">Classement</a>
-                <a href="?page=creePari">Créer un pari</a>
+                <a href="?page=createPoll">Créer un pari</a>
                 <a href="?page=connexion">Se connecter</a>
             </nav>
         </header>
