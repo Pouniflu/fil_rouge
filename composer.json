@@ -1,0 +1,17 @@
+{
+    "name": "claire/fil_rouge",
+    "description": "Projet Fil Rouge",
+    "authors": [
+        {
+            "name": "Claire",
+            "email": "claire.brisbart@edu.devinci.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Core\\":"Core/"
+        }
+    },
+    "require": {}
+}
