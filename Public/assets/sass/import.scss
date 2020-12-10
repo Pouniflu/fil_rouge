@@ -1,3 +1,5 @@
+// sass --watch Public/assets/sass/import.scss Public/assets/css/import.css
+
 // Utilities
 @import 'utilities/mixins';
 @import 'utilities/variables';
@@ -7,9 +9,12 @@
 @import 'layout';
 
 // Fichiers présents dans le dossier modules
+@import 'modules/button/button-validation';
+@import 'modules/button/button-return';
 @import 'modules/footer-link';
 @import 'modules/header-nav';
 @import 'modules/header-title';
 @import 'modules/home-main-button';
 @import 'modules/home-main-text';
 @import 'modules/home-main-title';
+@import 'modules/inscription/inscriptionForm';

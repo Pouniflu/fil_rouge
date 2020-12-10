@@ -1,0 +1,6 @@
+.button-return {
+    text-decoration: none;
+    @include typoLato($small);
+    font-weight: 300;
+    color: $black;
+}

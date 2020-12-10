@@ -27,7 +27,7 @@
                 <a href="?page=thematiques">Thématiques</a>
                 <a href="?page=classement">Classement</a>
                 <a href="?page=createPoll">Créer un pari</a>
-                <a href="?page=connexion">Connexion</a>
+                <a href="?page=inscription">Connexion</a>
             </div>
 
         </main>

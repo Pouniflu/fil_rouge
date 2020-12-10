@@ -7,7 +7,16 @@
 
 // H(X)
 h1 {
-    font-size : $h1;
+    @include typoLato($h1);
+}
+
+h2 {
+    @include typoLato($h2);
+}
+
+// Classes basiques
+.uppercase {
+    text-transform: uppercase;
 }
 
 // Header

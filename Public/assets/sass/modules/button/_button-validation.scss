@@ -1,0 +1,10 @@
+.button-validation {
+    margin-top: 3vh;
+    padding: 1.5vh 4vw;
+    border: none;
+    border-radius: 30px;
+    background: $dark;
+    @include typoLato($nav);
+    font-weight: bold;
+    color: $lavande;
+}

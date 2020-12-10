@@ -24,8 +24,12 @@ if(array_key_exists("page", $_GET)){
             $controller->renderIndex();
             break;
         case 'inscription':
+            $message = null;
             $controller = new InscriptionController();
-            $controller->renderIndex();
+            if(isset($_POST["pseudo"])){
+                $message = $controller->createUser();
+            }
+            $controller->renderIndex($message);
             break;
         case 'createPoll':
             $controller = new CreatePollController();

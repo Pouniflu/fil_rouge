@@ -16,3 +16,15 @@
         width: 50%;
     }
 }
+
+// InscriptionView
+.inscription-main {
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+
+    a {
+        position: absolute;
+        left: 2vw;
+    }
+}

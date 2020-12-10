@@ -1,0 +1,36 @@
+.inscriptionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 75vh;
+    border-radius: 50px;
+    background-color: $lavande;
+
+    // Titre du formulaire
+    h2 {
+        margin: 2vh 0 5vh;
+    }
+
+    // Les textes relatifs aux inputs
+    label {
+        @include typoLato($nav);
+        font-weight: 700;
+    }
+
+    // Tous les input sauf le bouton "Valider"
+    input:not([type=submit]) {
+        width: 80%;
+        height: 5vh;
+        margin: 2vh 0;
+        border: none;
+        border-bottom: 2px solid $dark;
+        background: none;
+        @include typoLato($nav);
+        
+        // Enlève la bordure noir quand on clique sur l'input pour écrire à l'intérieur
+        &:focus {
+            outline: none;
+        }
+    }
+}
