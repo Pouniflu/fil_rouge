@@ -20,8 +20,12 @@ if(array_key_exists("page", $_GET)){
             $controller->renderIndex();
             break;
         case 'connexion':
+            $error = null;
             $controller = new ConnexionController();
-            $controller->renderIndex();
+            if(isset($_POST["pseudoConnect"])){
+                $error = $controller->LogUser();
+            }
+            $controller->renderIndex($error);
             break;
         case 'inscription':
             $message = null;

@@ -20,20 +20,20 @@
 
                 <!-- Identifiant -->
                 <label for="pseudo">Identifiant</label>
-                <input type="text" id="pseudo" name="pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>">
+                <input type="text" id="pseudo" name="pseudoConnect" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>">
 
                 <!-- Mot de passe -->
                 <label for="password">Mot de Passe</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="passwordConnect">
 
                 <!-- Si l'utilisateur n'est pas encore inscrit -->
                 <a href="?page=inscription" class="button-inscription">Pas encore inscrit ?</a>
 
                 <!-- Validation de la connexion -->
-                <input type="submit" name="formInscription" value="Valider" class="button-validation uppercase">
-                
-                <?php if (!is_null($message)) { ?>
-                    <p id="red"><?= $message ?></p>
+                <input type="submit" name="formConnexion" value="Valider" class="button-validation uppercase">
+
+                <?php if (!is_null($error)) { ?>
+                    <p id="red"><?= $error ?></p>
                 <?php  } ?>
         </form>
 
