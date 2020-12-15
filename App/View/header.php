@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <p class="header-title">Mozza</p>
+            <a href="?page=thematiques" class="header-title">Mozza</a>
             <nav class="header-nav">
                 <a href="?page=thematiques">Thématiques</a>
                 <a href="?page=classement">Classement</a>

@@ -115,6 +115,7 @@ footer {
 .header-title {
   font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #fffdf0;
 }
 
