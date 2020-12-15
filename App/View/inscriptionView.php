@@ -10,7 +10,7 @@
 
     <main class="inscription-main">
         <!-- Bouton pour revenir à la page d'accueil -->
-        <a href="?page=home" class="button-return">Retour à la page d'accueil</a>
+        <a href="?page=connexion" class="button-return">Retour à la page précédente</a>
 
         <!-- Formulaire d'inscription -->
         <form method="POST" action="" class="inscriptionForm">

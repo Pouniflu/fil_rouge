@@ -60,6 +60,25 @@ footer {
   left: 2vw;
 }
 
+.connexion-main {
+  padding-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+.connexion-main a:first-child {
+  position: absolute;
+  left: 2vw;
+}
+
+.button-inscription {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #161616;
+  text-decoration: underline;
+}
+
 .button-validation {
   margin-top: 3vh;
   padding: 1.5vh 4vw;
@@ -111,7 +130,7 @@ footer {
   background-color: #75E8E7;
 }
 
-.inscriptionForm {
+.inscriptionForm, .connexionForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,15 +139,15 @@ footer {
   border-radius: 50px;
   background-color: #DDACF5;
 }
-.inscriptionForm h2 {
+.inscriptionForm h2, .connexionForm h2 {
   margin: 2vh 0 5vh;
 }
-.inscriptionForm label {
+.inscriptionForm label, .connexionForm label {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
-.inscriptionForm input:not([type=submit]) {
+.inscriptionForm input:not([type=submit]), .connexionForm input:not([type=submit]) {
   width: 80%;
   height: 5vh;
   margin: 2vh 0;
@@ -138,7 +157,7 @@ footer {
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
-.inscriptionForm input:not([type=submit]):focus {
+.inscriptionForm input:not([type=submit]):focus, .connexionForm input:not([type=submit]):focus {
   outline: none;
 }
 

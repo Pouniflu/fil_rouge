@@ -9,6 +9,7 @@
 @import 'layout';
 
 // Fichiers présents dans le dossier modules
+@import 'modules/button/button-inscription';
 @import 'modules/button/button-validation';
 @import 'modules/button/button-return';
 @import 'modules/footer-link';
@@ -18,3 +19,4 @@
 @import 'modules/home-main-text';
 @import 'modules/home-main-title';
 @import 'modules/inscription/inscriptionForm';
+@import 'modules/connexion/connexionForm';

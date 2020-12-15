@@ -1,0 +1,7 @@
+.button-inscription {
+    text-decoration: none;
+    @include typoLato($small);
+    font-weight: 700;
+    color: $black;
+    text-decoration: underline;
+}
