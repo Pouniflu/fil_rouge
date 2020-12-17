@@ -1,0 +1,28 @@
+.profil-main-user {
+    display: flex;
+    align-items: center;
+    height: 22vh;
+    width: 100%;
+    background-color: $lavande;
+
+    img {
+        margin-left: 5vw;
+        height: 18vh;
+        width: 9vw;
+        border-radius: 200px;
+
+        background-color: $dark;
+    }
+
+    div {
+        margin-top: 2vh;
+        padding: 10px 4vw;
+        background-color: $violet;
+
+        @include typoLato($middle);
+    }
+
+    section {
+        margin-left: 5vw;
+    }
+}

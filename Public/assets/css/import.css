@@ -14,6 +14,11 @@ h2 {
   font-size: 35px;
 }
 
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -68,6 +73,24 @@ footer {
 .connexion-main a:first-child {
   position: absolute;
   left: 2vw;
+}
+
+.profil-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8vh 15vw;
+}
+.profil-main div:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profil-main div:nth-of-type(3) > section {
+  margin-top: 4vh;
+}
+.profil-main div:nth-of-type(3) > section:first-child section {
+  margin: 1vh 0;
 }
 
 .button-inscription {
@@ -162,6 +185,79 @@ footer {
 }
 .inscriptionForm input[type=submit], .connexionForm input[type=submit] {
   margin-bottom: 6vh;
+}
+
+.profil-main-list-friend {
+  background-color: #DDACF5;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.profil-main-list-friend img {
+  border-radius: 100px;
+  background-color: #27104E;
+}
+.profil-main-list-friend img:first-child {
+  height: 8vh;
+  width: 4vw;
+}
+.profil-main-list-friend img:last-child {
+  height: 4vh;
+  width: 2vw;
+}
+.profil-main-list-friend p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.profil-main-list {
+  background-color: #75E8E7;
+  width: 34vw;
+  height: fit-content;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+}
+.profil-main-list h2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+}
+.profil-main-list h2 img {
+  height: 4vh;
+  width: 2vw;
+}
+.profil-main-list h2 img:first-child {
+  display: block;
+  background-color: #27104E;
+}
+.profil-main-list h2 img:last-child {
+  display: none;
+  background-color: #fffdf0;
+}
+
+.profil-main-user {
+  display: flex;
+  align-items: center;
+  height: 22vh;
+  width: 100%;
+  background-color: #DDACF5;
+}
+.profil-main-user img {
+  margin-left: 5vw;
+  height: 18vh;
+  width: 9vw;
+  border-radius: 200px;
+  background-color: #27104E;
+}
+.profil-main-user div {
+  margin-top: 2vh;
+  padding: 10px 4vw;
+  background-color: #64379F;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+.profil-main-user section {
+  margin-left: 5vw;
 }
 
 /*# sourceMappingURL=import.css.map */

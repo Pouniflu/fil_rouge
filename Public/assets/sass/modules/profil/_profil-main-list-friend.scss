@@ -1,0 +1,26 @@
+.profil-main-list-friend {
+    background-color: $lavande;
+    // Changez en flex pour le voir et en none pour le retirer
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        border-radius: 100px;
+        background-color: $dark;
+
+        &:first-child {
+            height: 8vh;
+            width: 4vw;
+        }
+
+        &:last-child {
+            height: 4vh;
+            width: 2vw;
+        }
+    }
+
+    p {
+        @include typoLato($small);
+    }
+}

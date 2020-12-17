@@ -1,0 +1,28 @@
+.profil-main-list {
+    background-color: $blue;
+    width: 34vw;
+    height: fit-content;
+
+    @include typoLato($h2);
+
+    h2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 2vw;
+
+        img {
+            height: 4vh;
+            width: 2vw;
+
+            &:first-child {
+                display: block;
+                background-color: $dark;
+            }
+
+            &:last-child {
+                display: none;
+                background-color: $white;
+            }
+        }
+    }
+}

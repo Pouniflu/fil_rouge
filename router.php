@@ -10,6 +10,7 @@ use App\Controller\HomeController;
 use App\Controller\ConnexionController;
 use App\Controller\CreatePollController;
 use App\Controller\InscriptionController;
+use App\Controller\ProfilController;
 
 
 // 2. Création du nouveau "case"
@@ -37,6 +38,10 @@ if(array_key_exists("page", $_GET)){
             break;
         case 'createPoll':
             $controller = new CreatePollController();
+            $controller->renderIndex();
+            break;
+        case 'profil':
+            $controller = new ProfilController();
             $controller->renderIndex();
             break;
         default:

@@ -40,3 +40,27 @@
         left: 2vw;
     }
 }
+
+// ProfilView
+.profil-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8vh 15vw;
+
+    div:nth-of-type(3){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        // Titre des listes déroulantes
+        &>section {
+            margin-top: 4vh;
+
+            // Liste d'amis
+            &:first-child section {
+                margin: 1vh 0;
+            }
+        }
+    }
+}
