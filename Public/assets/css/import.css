@@ -33,6 +33,12 @@ h4 {
   text-transform: uppercase;
 }
 
+.button-return {
+  padding-top: 3vh;
+  position: absolute;
+  left: 2vw;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -70,19 +76,11 @@ footer {
   display: flex;
   justify-content: center;
 }
-.inscription-main a {
-  position: absolute;
-  left: 2vw;
-}
 
 .connexion-main {
   padding-top: 3vh;
   display: flex;
   justify-content: center;
-}
-.connexion-main a:first-child {
-  position: absolute;
-  left: 2vw;
 }
 
 .profil-main {
@@ -115,10 +113,10 @@ footer {
   align-items: center;
   margin-bottom: 15vh;
 }
-.createPollExplication-main section:first-child {
+.createPollExplication-main section:first-of-type {
   margin: 6vh 0;
 }
-.createPollExplication-main section:last-child a {
+.createPollExplication-main section:last-of-type a {
   margin-top: 8vh;
 }
 

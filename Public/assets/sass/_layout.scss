@@ -22,11 +22,6 @@
     padding-top: 3vh;
     display: flex;
     justify-content: center;
-
-    a {
-        position: absolute;
-        left: 2vw;
-    }
 }
 
 // ConnexionView
@@ -34,11 +29,6 @@
     padding-top: 3vh;
     display: flex;
     justify-content: center;
-
-    a:first-child {
-        position: absolute;
-        left: 2vw;
-    }
 }
 
 // ProfilView
@@ -80,11 +70,11 @@
     align-items: center;
     margin-bottom: 15vh;
 
-    section:first-child {
+    section:first-of-type {
         margin: 6vh 0;
     }
 
-    section:last-child{
+    section:last-of-type{
         a {
             margin-top: 8vh;
         }

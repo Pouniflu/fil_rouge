@@ -26,7 +26,7 @@
             <div class="home-main-button">
                 <a href="?page=thematiques">Thématiques</a>
                 <a href="?page=classement">Classement</a>
-                <a href="?page=createPoll">Créer un pari</a>
+                <a href="?page=createPollExplication">Créer un pari</a>
                 <a href="?page=profil">Connexion</a>
             </div>
 
