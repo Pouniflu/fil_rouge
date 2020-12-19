@@ -57,9 +57,17 @@
         &>section {
             margin-top: 4vh;
 
-            // Liste d'amis
+            // Barre déroulante de la liste d'amis : fait en sorte que les amis ne soient pas collés les uns aux autres
             &:first-child section {
                 margin: 1vh 0;
+            }
+
+            &:nth-child(2) section, &:last-child div>div {
+                margin: 1vh 1.5vw;
+            }
+
+            &:nth-child(3) div {
+                margin: 0 1.5vw;
             }
         }
     }

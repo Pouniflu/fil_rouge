@@ -1,4 +1,9 @@
-// Réinitialisation de tous les éléments du site
+// Mettre le HTML en relative pour que le footer soit bien en bas
+html {
+    position:relative;
+    min-height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +21,10 @@ h2 {
 
 h3 {
     @include typoLato($nav);
+}
+
+h4 {
+    @include typoLato($small);
 }
 
 // Classes basiques

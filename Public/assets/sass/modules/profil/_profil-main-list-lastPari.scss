@@ -1,0 +1,12 @@
+.profil-main-list-lastPari {
+    // Changez en block pour le voir et en none pour le retirer
+    display: none;
+
+    margin: 1.5vh 0;
+    padding: 1.5vh 2vw;
+    width: 100%;
+    background-color: $lavande;
+    border-radius: 10px;
+    font-weight: 500;
+    @include typoLato($small);
+}

@@ -1,0 +1,19 @@
+.profil-main-list-param {
+    // Changez en flex pour le voir et en none pour le retirer
+    display: none;
+    flex-direction: column;
+
+    label {
+        @include typoLato($middle);
+        font-weight: bold;
+    }
+
+    input {
+        height: 5vh;
+        margin: 2vh 0;
+        padding: 1vh 0.5vw;
+        border: none;
+        background: $lightviolet;
+        @include typoLato($middle);
+    }
+}

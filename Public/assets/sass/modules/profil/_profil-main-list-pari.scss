@@ -1,0 +1,32 @@
+.profil-main-list-pari {
+    // Changez en flex pour le voir et en none pour le retirer
+    display: none;
+    flex-direction: column;
+
+    h4 {
+        padding: 1.5vh 2vw;
+        width: 100%;
+        background-color: $lavande;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1vh;
+
+        p {
+            padding: 1vh 2vw;
+            width: 70%;
+            background-color: $violet;
+            @include typoLato($mini);
+            font-weight: 300;
+        }
+
+        img {
+            height: 4vh;
+            width: 2vw;
+        }
+    }
+}
