@@ -9,10 +9,14 @@
 @import 'layout';
 
 // Fichiers présents dans le dossier modules
+@import 'modules/button/button-after';
 @import 'modules/button/button-inscription';
 @import 'modules/button/button-validation';
 @import 'modules/button/button-return';
 @import 'modules/connexion/connexionForm';
+@import 'modules/createPollExplication/createPollExplication-text-long';
+@import 'modules/createPollExplication/createPollExplication-text';
+@import 'modules/createPollExplication/createPollExplication-title';
 @import 'modules/footer/footer-link';
 @import 'modules/header/header-nav';
 @import 'modules/header/header-title';

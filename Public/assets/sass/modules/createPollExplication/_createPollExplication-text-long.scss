@@ -1,0 +1,23 @@
+.createPollExplication-text-long {
+    background-color: $lavande;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 5vw 0;
+
+    &>img {
+        margin: 0 auto;
+        margin-top: 4vh;
+        height: 60vh;
+        width: 60vw;
+        background-color: $dark;
+    }
+
+    p {
+        @include typoLato($small);
+    }
+
+    p:last-child {
+        text-align: center;
+        margin: 6vh 5vw;
+    }
+}

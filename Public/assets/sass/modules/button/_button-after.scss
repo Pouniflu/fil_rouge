@@ -1,0 +1,10 @@
+.button-after {
+    margin: 0 auto;
+    width: fit-content;
+    @include typoLato($middle);
+    text-decoration: none;
+    padding: 2vh 4vw;
+    background-color: $blue;
+    border-radius: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,22 @@
+.createPollExplication-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &>img {
+        height: 9vh;
+        width: 4vw;
+        background-color: $dark;
+        margin-right: 6vw;
+    }
+
+    h2 {
+        background-color: $blue;
+        padding: 2vh 8vw;
+        border-radius: 50px;
+    }
+
+    &>img, h2 {
+        margin-bottom: 5vh;
+    }
+}

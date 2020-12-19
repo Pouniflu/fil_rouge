@@ -72,3 +72,21 @@
         }
     }
 }
+
+// CreatePollView
+.createPollExplication-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15vh;
+
+    section:first-child {
+        margin: 6vh 0;
+    }
+
+    section:last-child{
+        a {
+            margin-top: 8vh;
+        }
+    }
+}
