@@ -1,0 +1,9 @@
+.createPoll-text {
+    @extend .createPollExplication-text;
+
+    p {
+        width: 100%;
+        @include typoLato($small);
+
+    }
+}
