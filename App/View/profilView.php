@@ -4,6 +4,8 @@
         <div>
         </div>
 
+        <a href="?page=home" class="button-return">Retour à la page d'accueil</a>
+        
         <!-- Vignette du profil -->
         <div class="profil-main-user">
             <img alt="">

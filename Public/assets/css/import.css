@@ -71,23 +71,22 @@ footer {
   width: 50%;
 }
 
-.inscription-main {
-  padding-top: 3vh;
+.inscription-main, .connexion-main {
   display: flex;
   justify-content: center;
 }
-
-.connexion-main {
-  padding-top: 3vh;
-  display: flex;
-  justify-content: center;
+.inscription-main form, .connexion-main form {
+  margin-top: 3vh;
 }
 
 .profil-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 8vh 15vw;
+  margin: 0 15vw;
+}
+.profil-main div:nth-of-type(2) {
+  margin-top: 8vh;
 }
 .profil-main div:nth-of-type(3) {
   display: flex;
