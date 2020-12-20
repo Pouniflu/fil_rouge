@@ -15,4 +15,14 @@ class PollsByThemModel extends Database {
         $query->execute(array($_GET['thematique_id']));
         return $query->fetchAll(\PDO::FETCH_ASSOC);
     }
+
+    public function getThematique(){
+        $query = $this->pdo->prepare(
+            "SELECT nom
+            FROM t_thematiques
+            WHERE thematique_id = ?"
+        );
+        $query->execute(array($_GET['thematique_id']));
+        return $query->fetchAll(\PDO::FETCH_ASSOC);
+    }
 }

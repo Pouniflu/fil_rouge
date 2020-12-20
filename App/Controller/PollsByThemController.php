@@ -12,6 +12,7 @@ class PollsByThemController {
 
     public function renderIndex(){
         $pollsByThem = $this->model->getPollsByThem();
+        $thematique = $this->model->getThematique();
         require ROOT."/App/View/PollsByThemView.php";
     }
 }

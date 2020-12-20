@@ -1,9 +1,9 @@
 <?php include 'header.php'?>
         <main class="pollsByThem-main">
-            <div>
+            <div class="pollsByThem-header">
                 <section>
                     <img src="" alt="">
-                    <h2 class="uppercase">Thématiques</h2>
+                    <h2 class="uppercase"><?= $thematique[0]["nom"]?></h2>
                 </section>
             </div>    
 

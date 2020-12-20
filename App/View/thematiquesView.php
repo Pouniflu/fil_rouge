@@ -1,7 +1,12 @@
 <?php include 'header.php'?>
         <main class="thematiques-main">
             <section>
-                <h2 class="uppercase">Thématiques</h2>
+                <div class="pollsByThem-header">
+                <section>
+                    <img src="" alt="">
+                    <h2 class="uppercase">Thématiques</h2>
+                </section>
+            </div> 
                 <input type="text" placeholder="Rechercher">
                 <div>
                     <img src="" alt="">
