@@ -165,6 +165,25 @@ footer {
   margin-top: 6vh;
 }
 
+.thematiques-main {
+  margin: 0 13vw;
+}
+.thematiques-main > div {
+  padding-top: 3vh;
+}
+.thematiques-main > div > div {
+  padding-bottom: 2vh;
+}
+
+.pollsByThem-main {
+  padding: 0 13vw;
+}
+.pollsByThem-main > div:first-of-type {
+  background-color: #64379F;
+  height: 20vh;
+  padding: 4vh 2vw;
+}
+
 .button-after {
   margin: 0 auto;
   width: fit-content;
@@ -503,6 +522,107 @@ footer {
 }
 .profil-main-user section {
   margin-left: 5vw;
+}
+
+.search-bar {
+  width: 100%;
+  height: 4vh;
+  border: none;
+  background-color: #75E8E7;
+}
+
+.pollsByThem-table {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5vh;
+  background-color: #DDACF5;
+}
+.pollsByThem-table table {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+.pollsByThem-table table tr {
+  text-align: center;
+}
+.pollsByThem-table table td {
+  width: 20vw;
+  height: 10vh;
+}
+.pollsByThem-table table td img {
+  height: 8vh;
+  width: 4vw;
+  background-color: #27104E;
+  border-radius: 100px;
+}
+.pollsByThem-table table td a {
+  text-decoration: none;
+  color: #161616;
+  font-weight: 800;
+  padding: 2vh 1vw;
+  background-color: #75E8E7;
+  border-radius: 15px;
+}
+
+.thematiques-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thematiques-choice h3 {
+  padding: 2vh 4vw;
+  background-color: #DDACF5;
+  margin-bottom: 3vh;
+}
+
+.thematiques-header section {
+  background: #DDACF5;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5vw;
+  width: fit-content;
+}
+.thematiques-header section h2 {
+  margin-right: 2vw;
+}
+.thematiques-header section img {
+  height: 6vh;
+  width: 3vw;
+  margin: 2vh 1vw;
+  background-color: #64379F;
+}
+
+.thematiques-link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.thematiques-link li {
+  text-align: center;
+  list-style-type: none;
+  padding: 0.5vh 0;
+}
+.thematiques-link li a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #161616;
+}
+.thematiques-link li a:hover {
+  color: #9854CB;
+  font-weight: 600;
+}
+
+.thematiques-text {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5vw;
+  width: fit-content;
+}
+.thematiques-text img {
+  height: 6vh;
+  width: 3vw;
+  margin: 2vh 1vw;
+  background-color: #64379F;
 }
 
 /*# sourceMappingURL=import.css.map */

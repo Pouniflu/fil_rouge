@@ -1,0 +1,22 @@
+.thematiques-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    li {
+        text-align: center;
+        list-style-type: none;
+        padding: 0.5vh 0;
+
+        a {
+            text-decoration: none;
+            @include typoLato($small);
+            color: $black;
+
+            &:hover{
+                color: $lightviolet;
+                font-weight: 600;
+            }
+        }
+    }
+}

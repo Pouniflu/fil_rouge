@@ -1,0 +1,20 @@
+.thematiques-header {
+    section {
+        background: $lavande;
+        display: flex;
+        align-items: center;
+        padding-left: 0.5vw;
+        width: fit-content;
+
+        h2 {
+            margin-right: 2vw;
+        }
+
+        img {
+            height: 6vh;
+            width: 3vw;
+            margin: 2vh 1vw;
+            background-color: $violet;
+        }
+    }
+}

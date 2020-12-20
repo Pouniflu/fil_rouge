@@ -103,3 +103,27 @@
         }
     }
 }
+
+// ThematiquesView
+.thematiques-main {
+    margin: 0 13vw;
+
+    &>div {
+        padding-top: 3vh;
+
+        &>div {
+            padding-bottom: 2vh;
+        }
+    }
+}
+
+// Polls By Thematiques View
+.pollsByThem-main {
+    padding: 0 13vw;
+
+    &>div:first-of-type {
+        background-color: $violet;
+        height: 20vh;
+        padding: 4vh 2vw;
+    }
+}

@@ -1,22 +1,24 @@
 <?php include 'header.php'?>
         <main class="thematiques-main">
-            <section>
-                <div class="pollsByThem-header">
-                <section>
+            <a href="?page=home" class="button-return">Retour à la page d'accueil</a>
+            <div>
+                <div class="thematiques-header">
+                    <section>
+                        <img src="" alt="">
+                        <h2 class="uppercase">Thématiques</h2>
+                    </section>
+                </div> 
+                <input type="text" class="search-bar" placeholder="Rechercher">
+                <div class="thematiques-text">
                     <img src="" alt="">
-                    <h2 class="uppercase">Thématiques</h2>
-                </section>
-            </div> 
-                <input type="text" placeholder="Rechercher">
-                <div>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                        <br>ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
                 </div>
-            </section>
+            </div>
 
-            <section>
+            <section class="thematiques-choice">
                 <h3 class="uppercase">Clique sur le thème de ton choix !</h3>
-                <ul id="thematiques-link">
+                <ul class="thematiques-link">
                     <?php foreach($thematiques as $thematique): ?>
                     <li><a href="?page=polls&thematique_id=<?= $thematique['thematique_id'] ?>"><?= $thematique['nom']?></a></li>
                     <?php endforeach ?>

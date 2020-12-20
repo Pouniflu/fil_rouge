@@ -1,0 +1,35 @@
+.pollsByThem-table {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5vh;
+    background-color: $lavande;
+    
+    table {
+        @include typoLato($middle);
+
+        tr {
+            text-align: center;
+        }
+
+        td {
+            width: 20vw;
+            height: 10vh;
+
+            img {
+                height: 8vh;
+                width: 4vw;
+                background-color: $dark;
+                border-radius: 100px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-weight: 800;
+                padding: 2vh 1vw;
+                background-color: $blue;
+                border-radius: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.thematiques-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        padding: 2vh 4vw;
+        background-color: $lavande;
+        margin-bottom: 3vh;
+    }
+}

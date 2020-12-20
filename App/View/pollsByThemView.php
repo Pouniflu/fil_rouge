@@ -1,13 +1,14 @@
 <?php include 'header.php'?>
         <main class="pollsByThem-main">
-            <div class="pollsByThem-header">
+            <a href="?page=thematiques" class="button-return">Retour à la page précédente</a>
+            <div class="thematiques-header">
                 <section>
                     <img src="" alt="">
                     <h2 class="uppercase"><?= $thematique[0]["nom"]?></h2>
                 </section>
             </div>    
 
-            <div>
+            <div class="pollsByThem-table">
                 <table>
                     <?php foreach($pollsByThem as $pollByThem):?>
                     <tr>
