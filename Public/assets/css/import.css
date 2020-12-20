@@ -340,17 +340,22 @@ footer {
 .footer-link {
   text-decoration: none;
   color: #fffdf0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .header-nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fffdf0;
-  font-size: 20px;
   padding-left: 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
 }
 
 .header-title {
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;

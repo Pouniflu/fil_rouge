@@ -1,4 +1,6 @@
 .footer-link {
     text-decoration: none;
     color: $white;
+    @include typoLato($small);
+    font-weight: 300;
 }

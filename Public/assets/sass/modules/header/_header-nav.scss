@@ -3,7 +3,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $white;
-        font-size: $nav;
         padding-left: 100px;
+        @include typoLato($nav);
     }
 }
