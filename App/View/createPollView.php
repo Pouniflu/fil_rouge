@@ -15,13 +15,14 @@
             </section>
             
             <form method="POST">
+                <?= $createPollMessage ?>
                 <div class="createPoll-creation">
-                    <input type="text" aria-label="insert title" placeholder="Insérez ici le titre du pari">
-                    <input type="text" aria-label="insert question" placeholder="Insérez ici la question">
-                    <input type="text" aria-label="insert choice 1" placeholder="Choix 1">
-                    <input type="text" aria-label="insert choice 2" placeholder="Choix 2">
-                    <input type="text" aria-label="insert choice 3" placeholder="Choix 3">
-                    <input type="text" aria-label="insert choice 4" placeholder="Choix 4">
+                    <input type="text" aria-label="insert title" name="title" placeholder="Insérez ici le titre du pari">
+                    <input type="text" aria-label="insert question" name="question" placeholder="Insérez ici la question">
+                    <input type="text" aria-label="insert choice 1" name="answer1" placeholder="Choix 1">
+                    <input type="text" aria-label="insert choice 2" name="answer2" placeholder="Choix 2">
+                    <input type="text" aria-label="insert choice 3" name="answer3" placeholder="Choix 3">
+                    <input type="text" aria-label="insert choice 4" name="answer4" placeholder="Choix 4">
                 </div>
                 <input type="submit" value="Valider" class="button-validation uppercase">
             </form>

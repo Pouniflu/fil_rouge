@@ -38,6 +38,26 @@ h4 {
     left: 2vw;
 }
 
+#error {
+    padding: 1.2vh 2vw;
+    margin-bottom: 4vh;
+    @include typoLato($middle);
+    background-color: $white;
+    color: red;
+    font-weight: 700;
+    //border-radius: 30px;
+}
+
+#correct {
+    padding: 1.2vh 2vw;
+    margin-bottom: 4vh;
+    @include typoLato($middle);
+    background-color: $white;
+    color: green;
+    font-weight: 700;
+    //border-radius: 30px;
+}
+
 // Header
 header {
     display: flex;
