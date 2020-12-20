@@ -8,7 +8,7 @@
     input {
         width: 80%;
         height: 5vh;
-        margin: 2vh 0;
+        margin: 2vh auto;
         border: none;
         background: $violet;
         @include typoLato($nav);

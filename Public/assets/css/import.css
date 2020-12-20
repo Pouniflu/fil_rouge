@@ -1,3 +1,9 @@
+/* 
+En cas de modification du fichier, copier-coller cette commande dans l'invite de commande pour lancer SASS :
+sass --watch Public/assets/sass/import.scss Public/assets/css/import.css
+Attention, vous devez avoir SASS d'installer avant.
+Si vous ne voyez pas de changement sur votre page au rafraichissement, vider le cache.
+*/
 html {
   position: relative;
   min-height: 100%;
@@ -196,6 +202,22 @@ footer {
   color: #161616;
 }
 
+.createPoll-creation-select {
+  width: 80%;
+  margin: 2vh 0;
+}
+.createPoll-creation-select label {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #161616;
+  font-weight: 600;
+}
+.createPoll-creation-select select {
+  margin-left: 1vw;
+  width: 20vw;
+  height: 3vh;
+}
+
 .createPoll-creation {
   background-color: #DDACF5;
   display: flex;
@@ -206,7 +228,7 @@ footer {
 .createPoll-creation input {
   width: 80%;
   height: 5vh;
-  margin: 2vh 0;
+  margin: 2vh auto;
   border: none;
   background: #64379F;
   font-family: "Lato", sans-serif;

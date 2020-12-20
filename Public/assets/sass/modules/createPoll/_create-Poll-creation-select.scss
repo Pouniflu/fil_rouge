@@ -1,0 +1,16 @@
+.createPoll-creation-select {
+    width: 80%;
+    margin: 2vh 0;
+
+    label {
+        @include typoLato($nav);
+        color: $black;
+        font-weight: 600;
+    }
+
+    select {
+        margin-left: 1vw;
+        width: 20vw;
+        height: 3vh;
+    }
+}

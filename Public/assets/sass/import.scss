@@ -1,4 +1,9 @@
-// sass --watch Public/assets/sass/import.scss Public/assets/css/import.css
+/* 
+En cas de modification du fichier, copier-coller cette commande dans l'invite de commande pour lancer SASS :
+sass --watch Public/assets/sass/import.scss Public/assets/css/import.css
+Attention, vous devez avoir SASS d'installer avant.
+Si vous ne voyez pas de changement sur votre page au rafraichissement, vider le cache.
+*/
 
 // Utilities
 @import 'utilities/mixins';
@@ -14,6 +19,7 @@
 @import 'modules/button/button-validation';
 @import 'modules/button/button-return';
 @import 'modules/connexion/connexionForm';
+@import 'modules/createPoll/create-Poll-creation-select';
 @import 'modules/createPoll/createPoll-creation';
 @import 'modules/createPoll/createPoll-text';
 @import 'modules/createPollExplication/createPollExplication-text-long';

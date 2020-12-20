@@ -12,7 +12,8 @@ use App\Controller\CreatePollController;
 use App\Controller\CreatePollExplicationController;
 use App\Controller\InscriptionController;
 use App\Controller\ProfilController;
-
+use App\Controller\GetThematiquesController;
+use App\Model\GetThematiquesModel;
 
 // 2. Création du nouveau "case"
 if(array_key_exists("page", $_GET)){
