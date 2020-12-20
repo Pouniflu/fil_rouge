@@ -56,7 +56,7 @@ class CreatePollModel extends Database {
                 }
             } else {
                 // Si l'utilisateur n'est pas connecté, on lui en informe.
-                return "Vous devez d'abord vous connecter !";
+                return "<p id=\"error\">Vous devez d'abord vous connecter !<p>";
             }
             
         }

@@ -12,8 +12,9 @@ use App\Controller\CreatePollController;
 use App\Controller\CreatePollExplicationController;
 use App\Controller\InscriptionController;
 use App\Controller\ProfilController;
-use App\Controller\GetThematiquesController;
-use App\Model\GetThematiquesModel;
+use App\Controller\ThematiquesController;
+use App\Controller\PollsByThemController;
+use App\Controller\PollController;
 
 // 2. Création du nouveau "case"
 if(array_key_exists("page", $_GET)){
@@ -48,6 +49,18 @@ if(array_key_exists("page", $_GET)){
             break;
         case 'profil':
             $controller = new ProfilController();
+            $controller->renderIndex();
+            break;
+        case 'thematiques' :
+            $controller = new ThematiquesController();
+            $controller->renderIndex();
+            break;
+        case 'polls' :
+            $controller = new PollsByThemController();
+            $controller->renderIndex();
+            break;
+        case 'poll' :
+            $controller = new PollController();
             $controller->renderIndex();
             break;
         default:

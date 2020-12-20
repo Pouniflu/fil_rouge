@@ -41,11 +41,13 @@
                 </h2>
                 <div>
                     <section class="profil-main-list-pari">
-                        <h4>Top Chef</h4>
+                        <?php foreach($polls as $poll):?>
+                        <h4><?= $poll["titre"] ?></h4>
                         <div>
-                            <p>Lien</p>
+                            <p><a href="?page=poll&sondage_id=<?= $poll['sondage_id']?>">Lien</a></p>
                             <img src="" alt="">
                         </div>
+                        <?php endforeach; ?>
                     </section>
                 </div>
             </section>
