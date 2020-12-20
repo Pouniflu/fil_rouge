@@ -12,11 +12,11 @@
                 <section class="home-main-text">
                     <h2>Comment ça fonctionne ?</h2>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                    <!-- image/icône à insérer ici -->
+                    <img src="" alt="">
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
 
                     <!-- Bouton Invite tes amis -->
-                    <a href="#" class="button-invit">Invite tes amis !</a>
+                    <a href="#" class="button-share uppercase">Invite tes amis !</a>
 
                     <!-- icônes des réseaux sociaux à insérer ici -->
                 </section>

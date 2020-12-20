@@ -1,0 +1,9 @@
+.button-share {
+    text-decoration: none;
+    color: $blue;
+    padding: 2vh 4vw;
+    background-color: $dark;
+    @include typoLato($nav);
+    color: $white;
+    border-radius: 20px;
+}
