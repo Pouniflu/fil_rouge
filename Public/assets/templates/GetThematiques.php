@@ -1,5 +1,5 @@
 <?php
-namespace App\Model;
+namespace assets\templates;
 //Liste des thématiques de pari
 
 $thematiques =
