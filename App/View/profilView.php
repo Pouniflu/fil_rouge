@@ -72,9 +72,9 @@
                 <div>
                     <div class="profil-main-list-param">
                         <label for="identifiant">Identifiant</label>
-                        <input type="text" id="identifiant">
+                        <input type="text" id="identifiant" placeholder="<?= $_SESSION['pseudo']?>">
                         <label for="email">Adresse email</label>
-                        <input type="text" id="email">
+                        <input type="text" id="email" placeholder="<?= $_SESSION['email']?>">
                     </div>
                 </div>
             </section>

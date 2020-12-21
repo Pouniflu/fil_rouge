@@ -15,5 +15,10 @@
         border: none;
         background: $lightviolet;
         @include typoLato($middle);
+
+        &::placeholder{
+            color: black;
+            padding-left: 1vh;
+        }
     }
 }
