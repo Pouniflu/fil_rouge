@@ -14,7 +14,7 @@
                     <tr>
                         <td><img src="" alt=""></td>
                         <td><?= $pollByThem['titre']?></td>
-                        <td class="uppercase">#Lorem Ipsum</td>
+                        <td><p class="uppercase hashtag">#LoremIpsum</p></td>
                         <td><a href="?page=poll&sondage_id=<?= $pollByThem['sondage_id']?>">GO</a></td>
                     </tr>
                     <?php endforeach ?>

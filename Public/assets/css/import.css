@@ -49,6 +49,15 @@ h4 {
   display: none;
 }
 
+.hashtag {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  padding: 0.5vh 1.5vh;
+  background-color: #9854CB;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
 #error {
   padding: 1.2vh 2vw;
   margin-bottom: 4vh;
@@ -182,6 +191,12 @@ footer {
   background-color: #64379F;
   height: 20vh;
   padding: 4vh 2vw;
+}
+.pollsByThem-main td:nth-of-type(3) {
+  width: fit-content;
+}
+.pollsByThem-main td:nth-of-type(3) p:not(:first-of-type) {
+  margin-top: 0.5vh;
 }
 
 .poll-main {
@@ -477,14 +492,6 @@ footer {
   margin: 1vh 0 2vh;
   font-family: "Lato", sans-serif;
   font-size: 20px;
-}
-.poll-title span {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  padding: 0.5vh 1.5vh;
-  background-color: #9854CB;
-  border-radius: 10px;
-  font-weight: 300;
 }
 
 .profil-main-list-friend {

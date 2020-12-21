@@ -126,6 +126,14 @@
         height: 20vh;
         padding: 4vh 2vw;
     }
+
+    td:nth-of-type(3){
+        width: fit-content;
+
+        p:not(:first-of-type) {
+            margin-top: 0.5vh;
+        }
+    }
 }
 
 // PollView

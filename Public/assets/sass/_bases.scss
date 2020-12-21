@@ -42,6 +42,14 @@ h4 {
     display: none;
 }
 
+.hashtag {
+    @include typoLato($small);
+    padding: 0.5vh 1.5vh;
+    background-color: $lightviolet;
+    border-radius: 10px;
+    font-weight: 300;
+}
+
 #error {
     padding: 1.2vh 2vw;
     margin-bottom: 4vh;

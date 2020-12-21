@@ -5,8 +5,8 @@
                 <h2><?= $thematique[0]['nom'] ?> - <?= $question[0]["titre"] ?></h2>
                 <p><?= $question[0]["question"] ?></p>
                 <p class="uppercase">
-                    <span>#Lorem</span>
-                    <span>#LoremIpsum</span>
+                    <span class="hashtag">#Lorem</span>
+                    <span class="hashtag">#LoremIpsum</span>
                 </p>
             </section>  
 

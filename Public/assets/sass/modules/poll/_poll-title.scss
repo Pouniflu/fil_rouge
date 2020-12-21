@@ -6,12 +6,4 @@
         margin: 1vh 0 2vh;
         @include typoLato($nav);
     }
-
-    span {
-        @include typoLato($small);
-        padding: 0.5vh 1.5vh;
-        background-color: $lightviolet;
-        border-radius: 10px;
-        font-weight: 300;
-    }
 }
