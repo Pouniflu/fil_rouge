@@ -16,6 +16,7 @@ use App\Controller\ThematiquesController;
 use App\Controller\PollsByThemController;
 use App\Controller\PollController;
 
+
 // 2. Création du nouveau "case"
 if(array_key_exists("page", $_GET)){
     switch ($_GET["page"]) {
@@ -62,6 +63,11 @@ if(array_key_exists("page", $_GET)){
         case 'poll' :
             $controller = new PollController();
             $controller->renderIndex();
+            break;
+        case 'deconnexion' :
+            session_start();
+            session_destroy();
+            header('location: ?page=home');
             break;
         default:
             # code...

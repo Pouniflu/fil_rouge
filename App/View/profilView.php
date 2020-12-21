@@ -10,7 +10,7 @@
         <div class="profil-main-user">
             <img alt="">
             <section>
-                <h2>Jean Eude</h2>
+                <h2 class="capitalize"><?= $user[0]['pseudo']?></h2>
                 <div class="uppercase">1000 points</div>
             </secion>
         </div>

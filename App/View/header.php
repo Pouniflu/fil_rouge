@@ -8,13 +8,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
         <title>Mozza</title>
     </head>
+    <?php
+        if(!empty($_SESSION['user_id'])) {
+            $redirectionNav = "deconnexion";
+        } else {
+            $redirectionNav = "connexion";
+        }
+
+    ?>
     <body>
-        <header>
+        <header class="uppercase">
             <a href="?page=home" class="header-title">Mozza</a>
             <nav class="header-nav">
                 <a href="?page=thematiques">Thématiques</a>
                 <a href="?page=classement">Classement</a>
                 <a href="?page=createPoll">Créer un pari</a>
-                <a href="?page=connexion">Se connecter</a>
+                <a href="?page=<?= $redirectionNav ?>"><?= $redirectionNav ?></a>
             </nav>
         </header>

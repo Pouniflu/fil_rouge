@@ -44,6 +44,10 @@ p {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .button-return {
   padding-top: 3vh;
   position: absolute;

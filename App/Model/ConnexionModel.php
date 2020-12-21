@@ -47,7 +47,7 @@ class ConnexionModel extends Database {
                         $_SESSION['pseudo'] = $userinfo['pseudo'];
                         $_SESSION['email'] = $userinfo['email'];
                         $_SESSION['password'] = $userinfo['password'];
-                        header("Location: ?");
+                        header("Location: ?page=profil&user_id=" . $userinfo['user_id']);
 
                     } else {
                         // Si le mdp n'est pas le même que celui dans la bdd

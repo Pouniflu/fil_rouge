@@ -29,4 +29,15 @@ class ProfilModel extends Database {
             return $query->fetchAll(\PDO::FETCH_ASSOC);
         }
     }
+
+    public function getUser() {
+        
+        $query = $this->pdo->prepare(
+            "SELECT pseudo
+            FROM t_utilisateurs
+            WHERE user_id = ?"
+        );
+        $query->execute(array($_GET['user_id']));
+        return $query->fetchAll(\PDO::FETCH_ASSOC);
+    }
 }

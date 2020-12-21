@@ -12,6 +12,7 @@ class ProfilController {
 
     public function renderIndex(){
         $polls = $this->model->getPolls();
+        $user = $this->model->getUser();
         require ROOT."/App/View/profilView.php";
     }
 }
