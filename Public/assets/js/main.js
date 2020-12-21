@@ -50,3 +50,6 @@ $("#close-list-param").click(function(){
     $(this).css("display", "none");
     $("#open-list-param").css("display", "block");
 });
+
+
+// Poll

@@ -16,4 +16,10 @@ class PollController {
         $thematique = $this->model->getThematique();
         require ROOT."/App/View/PollView.php";
     }
+
+    public function vote(){
+        $vote = $this->model->getVotes();
+        $vote++;
+        $newVote = $this->model->newVotes($vote);
+    }
 }

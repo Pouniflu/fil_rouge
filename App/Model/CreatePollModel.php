@@ -46,8 +46,8 @@ class CreatePollModel extends Database {
     
                     // Injection SQL : envoi des réponses dans la table t_reponses
                     $sendAnswers = $this->pdo->prepare(
-                        "INSERT INTO t_reponses (sondage_id, reponse)
-                        VALUE (?, ?)
+                        "INSERT INTO t_reponses (sondage_id, reponse, votes)
+                        VALUE (?, ?, 0)
                         ");
                     $sendAnswers->execute(array($selectPollID, $answers['answer1']));
                     $sendAnswers->execute(array($selectPollID, $answers['answer2']));

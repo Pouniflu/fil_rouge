@@ -46,10 +46,6 @@ p {
     left: 2vw;
 }
 
-.hidden {
-    display: none;
-}
-
 .hashtag {
     @include typoLato($small);
     padding: 0.5vh 1.5vh;

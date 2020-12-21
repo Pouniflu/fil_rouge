@@ -11,21 +11,21 @@
             </section>  
 
             <div>
-                <form class="poll-button">
-                    <input class="hidden" type="text" value="1">
-                    <input type="submit" class="uppercase" value="<?= $answers[0]["reponse"] ?>">
+                <form method="post" action="" class="poll-button" id="form1">
+                    <input name="ans" type="hidden" value="<?= $answers[0]["reponse_id"] ?>">
+                    <input type="submit" name="submit1" class="uppercase" value="<?= $answers[0]["reponse"] ?>">
                 </form>
-                <form class="poll-button">
-                    <input class="hidden" type="text" value="1">
-                    <input type="submit" class="uppercase" value="<?= $answers[1]["reponse"] ?>">
+                <form method="post" action="" class="poll-button" id="form2">
+                    <input name="ans" type="hidden" value="<?= $answers[1]["reponse_id"] ?>">
+                    <input type="submit" name="submit2" class="uppercase" value="<?= $answers[1]["reponse"] ?>">
                 </form>
-                <form class="poll-button">
-                    <input class="hidden" type="text" value="1">
-                    <input type="submit" class="uppercase" value="<?= $answers[2]["reponse"] ?>">
+                <form method="post" action="" class="poll-button" id="form3">
+                    <input name="ans" type="hidden" value="<?= $answers[2]["reponse_id"] ?>">
+                    <input type="submit" name="submit3" class="uppercase" value="<?= $answers[2]["reponse"] ?>">
                 </form>
-                <form class="poll-button">
-                    <input class="hidden" type="text" value="1">
-                    <input type="submit" class="uppercase" value="<?= $answers[3]["reponse"] ?>">
+                <form method="post" action="" class="poll-button" id="form4">
+                    <input name="ans" type="hidden" value="<?= $answers[3]["reponse_id"] ?>">
+                    <input type="submit" name="submit4" class="uppercase" value="<?= $answers[3]["reponse"] ?>">
                 </form>
             </div>
         </main>

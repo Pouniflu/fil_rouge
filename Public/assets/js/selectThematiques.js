@@ -8,13 +8,6 @@ $.ajax({
             $("#selection").append(`
                 <option>${thema.title}</option>
             `)
-
-            // Affichage des thématiques dans la catégorie thématique.
-            // $(document).ready(function() {
-            //     $("#thematiques-link").append(`
-            //     <li>${thema.title}</li>
-            //     `)
-            // });
         });
     }
 

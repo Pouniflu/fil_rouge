@@ -17,7 +17,7 @@ class PollModel extends Database {
 
     public function getAnswers(){
         $query = $this->pdo->prepare(
-            "SELECT reponse 
+            "SELECT reponse, reponse_id 
             FROM t_reponses
             WHERE sondage_id = ?"
         );
@@ -34,5 +34,25 @@ class PollModel extends Database {
         );
         $query->execute(array($_GET['sondage_id']));
         return $query->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
+    public function getVotes(){
+        $query = $this->pdo->prepare(
+            "SELECT votes
+            FROM t_reponses
+            WHERE reponse_id = ?
+            ");
+        $query->execute(array($_POST['ans']));
+        $newQuery = $query->fetch();
+        return $newQuery['votes'];
+    }
+
+    public function newVotes($data){
+        $query = $this->pdo->prepare(
+            "UPDATE t_reponses
+            SET votes = '" . $data . "'
+            WHERE reponse_id = ?
+            ");
+        $query->execute(array($_POST['ans']));
     }
 }

@@ -63,6 +63,7 @@ if(array_key_exists("page", $_GET)){
         case 'poll' :
             $controller = new PollController();
             $controller->renderIndex();
+            $controller->vote();
             break;
         case 'deconnexion' :
             session_start();
