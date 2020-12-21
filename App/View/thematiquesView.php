@@ -11,8 +11,8 @@
                 <input type="text" class="search-bar" placeholder="Rechercher">
                 <div class="thematiques-text">
                     <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-                        <br>ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                    <p>Choisis parmi les <span id="bold">11 catégories</span> celle que tu souhaites ! Chaque thématique regroupe l'ensemble des
+                        <br>paris et sondages portant sur un thème commun.</p>
                 </div>
             </div>
 
