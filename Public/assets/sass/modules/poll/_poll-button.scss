@@ -1,0 +1,10 @@
+.poll-button {
+    input {
+        background-color: $lightviolet;
+        width: 34vw;
+        height: 22vh;
+        border: none;
+        border-radius: 30px;
+        @include typoLato($nav);
+    }
+}

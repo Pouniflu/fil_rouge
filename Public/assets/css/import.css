@@ -184,6 +184,25 @@ footer {
   padding: 4vh 2vw;
 }
 
+.poll-main {
+  margin: 0 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poll-main section {
+  margin: 3vh 0 2vh;
+}
+.poll-main div:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70vw;
+}
+.poll-main div:first-of-type form {
+  margin-top: 4vh;
+}
+
 .button-after {
   margin: 0 auto;
   width: fit-content;
@@ -329,7 +348,7 @@ footer {
   margin-bottom: 5vh;
 }
 
-.createPollExplication-title {
+.createPollExplication-title, .poll-title {
   width: 60%;
   padding: 6vh 0;
   text-align: center;
@@ -439,6 +458,33 @@ footer {
 }
 .inscriptionForm input[type=submit], .connexionForm input[type=submit] {
   margin-bottom: 6vh;
+}
+
+.poll-button input {
+  background-color: #9854CB;
+  width: 34vw;
+  height: 22vh;
+  border: none;
+  border-radius: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.poll-title {
+  padding: 4vh 0;
+}
+.poll-title p:first-of-type {
+  margin: 1vh 0 2vh;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+.poll-title span {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  padding: 0.5vh 1.5vh;
+  background-color: #9854CB;
+  border-radius: 10px;
+  font-weight: 300;
 }
 
 .profil-main-list-friend {

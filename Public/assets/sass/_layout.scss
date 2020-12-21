@@ -127,3 +127,26 @@
         padding: 4vh 2vw;
     }
 }
+
+// PollView
+.poll-main {
+    margin: 0 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        margin: 3vh 0 2vh;
+    }
+
+    div:first-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70vw;
+
+        form {
+            margin-top: 4vh;
+        }
+    }
+}
