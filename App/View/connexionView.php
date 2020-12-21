@@ -33,7 +33,7 @@
                 <input type="submit" name="formConnexion" value="Valider" class="button-validation uppercase">
 
                 <?php if (!is_null($error)) { ?>
-                    <p id="red"><?= $error ?></p>
+                    <p id="error"><?= $error ?></p>
                 <?php  } ?>
         </form>
 

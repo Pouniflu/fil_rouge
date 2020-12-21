@@ -37,13 +37,13 @@ class InscriptionModel extends Database {
                             }
                             header("location: ?page=home");
                         } else {
-                            return "Vos mdp sont différents";
+                            return "Tes mots de passe sont différents";
                         }
                     } else {
                         return "Ton adresse mail n'est pas valide !";
                     }
                 } else {
-                    return "Votre pseudo ne doit pas dépasser 60 caractères";
+                    return "Ton pseudo ne doit pas dépasser 60 caractères";
                 }
             } else {
                 return "*Tous les champs doivent être complétés";

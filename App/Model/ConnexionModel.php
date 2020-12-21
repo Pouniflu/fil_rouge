@@ -55,7 +55,7 @@ class ConnexionModel extends Database {
                     }
                 } else {
                     // Si aucun pseudo ne correspond avec les informations de la bdd
-                    return "Aucun compte enregistré à ce pseudo !";
+                    return "Aucun compte n'est enregistré à ce pseudo !";
                 }
             } else {
                 // Si tous les champs ne sont pas complétés

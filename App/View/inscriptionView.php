@@ -38,7 +38,7 @@
                     <input type="submit" name="formInscription" value="Valider" class="button-validation uppercase">
                 
                 <?php if (!is_null($message)) { ?>
-                    <p id="red"><?= $message ?></p>
+                    <p id="error"><?= $message ?></p>
                 <?php  } ?>
         </form>
 

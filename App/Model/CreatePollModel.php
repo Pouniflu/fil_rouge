@@ -13,7 +13,6 @@ class CreatePollModel extends Database {
         if($_POST) {
 
             // Récupération du titre, de la question posée et de toutes les réponses dans un tableau answers
-            $thematique = htmlspecialchars($_POST['thematique']);
             $title = htmlspecialchars($_POST['title']);
             $question = htmlspecialchars($_POST['question']);
             $answers = [
@@ -24,14 +23,22 @@ class CreatePollModel extends Database {
             ];
 
             if(!empty($_SESSION)) {
-                if (!empty($_POST['thematique']) AND !empty($_POST['title']) AND !empty($_POST['question']) AND !empty($_POST['answer1']) AND !empty($_POST['answer2']) AND !empty($_POST['answer3']) AND !empty($_POST['answer4'])) {
-               
+                if (!empty($_POST['title']) AND !empty($_POST['question']) AND !empty($_POST['answer1']) AND !empty($_POST['answer2']) AND !empty($_POST['answer3']) AND !empty($_POST['answer4'])) {
+
+                    $them = $this->pdo->prepare(
+                        "SELECT thematique_id
+                        FROM t_thematiques
+                        WHERE nom = ?"
+                    );
+                    $them->execute(array($_POST['thematique']));
+                    $thematique = $them->fetchAll();
+
                     // Injection SQL : envoi de la question et de la durée dans la table t_sondages si les informations ne sont pas vides
                     $sendQuestion = $this->pdo->prepare(
-                        "INSERT INTO t_sondages (creator_id, thematique, titre, question, activite)
+                        "INSERT INTO t_sondages (creator_id, thematique_id, titre, question, activite)
                         VALUE (?, ?, ?, ?, 'open')
                     ");
-                    $sendQuestion->execute(array($_SESSION['user_id'], $_POST['thematique'], $_POST['title'], $_POST['question']));
+                    $sendQuestion->execute(array($_SESSION['user_id'], $thematique[0]['thematique_id'] , $_POST['title'], $_POST['question']));
     
                     // Select du sondage ID créé
                     // lastInsertId() permet de récupérer le dernier auto-increment inséré dans la table
