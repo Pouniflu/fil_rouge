@@ -2,7 +2,7 @@
 namespace App\Model;
 use Core\Database;
 
-// La classe PollsByThemModel permet de faire le lien entre le bdd et le controller
+// La classe PollModel permet de faire le lien entre le bdd et le controller
 class PollModel extends Database {
 
     public function getQuestion() {
@@ -19,6 +19,17 @@ class PollModel extends Database {
         $query = $this->pdo->prepare(
             "SELECT reponse 
             FROM t_reponses
+            WHERE sondage_id = ?"
+        );
+        $query->execute(array($_GET['sondage_id']));
+        return $query->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
+    public function getThematique(){
+        $query = $this->pdo->prepare(
+            "SELECT t_sondages.thematique_id, t_thematiques.nom
+            FROM t_sondages
+            INNER JOIN t_thematiques ON t_thematiques.thematique_id = t_sondages.thematique_id
             WHERE sondage_id = ?"
         );
         $query->execute(array($_GET['sondage_id']));

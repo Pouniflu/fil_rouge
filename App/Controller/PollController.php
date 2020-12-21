@@ -13,6 +13,7 @@ class PollController {
     public function renderIndex(){
         $question = $this->model->getQuestion();
         $answers = $this->model->getAnswers();
+        $thematique = $this->model->getThematique();
         require ROOT."/App/View/PollView.php";
     }
 }
