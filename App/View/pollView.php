@@ -10,23 +10,31 @@
                 </p>
             </section>  
 
-            <div>
-                <form method="post" action="" class="poll-button" id="form1">
+            <div id="question">
+                <form method="post" class="poll-button" id="form1">
                     <input name="ans" type="hidden" value="<?= $answers[0]["reponse_id"] ?>">
-                    <input type="submit" name="submit1" class="uppercase" value="<?= $answers[0]["reponse"] ?>">
+                    <input type="submit" name="submit1" class="uppercase submit1" value="<?= $answers[0]["reponse"] ?>">
                 </form>
-                <form method="post" action="" class="poll-button" id="form2">
+                <form method="post" class="poll-button" id="form2">
                     <input name="ans" type="hidden" value="<?= $answers[1]["reponse_id"] ?>">
-                    <input type="submit" name="submit2" class="uppercase" value="<?= $answers[1]["reponse"] ?>">
+                    <input type="submit" name="submit2" class="uppercase submit2" value="<?= $answers[1]["reponse"] ?>">
                 </form>
-                <form method="post" action="" class="poll-button" id="form3">
+                <form method="post" class="poll-button" id="form3">
                     <input name="ans" type="hidden" value="<?= $answers[2]["reponse_id"] ?>">
-                    <input type="submit" name="submit3" class="uppercase" value="<?= $answers[2]["reponse"] ?>">
+                    <input type="submit" name="submit3" class="uppercase submit3" value="<?= $answers[2]["reponse"] ?>">
                 </form>
-                <form method="post" action="" class="poll-button" id="form4">
+                <form method="post" class="poll-button" id="form4">
                     <input name="ans" type="hidden" value="<?= $answers[3]["reponse_id"] ?>">
-                    <input type="submit" name="submit4" class="uppercase" value="<?= $answers[3]["reponse"] ?>">
+                    <input type="submit" name="submit4" class="uppercase submit4" value="<?= $answers[3]["reponse"] ?>">
                 </form>
             </div>
+
+            <div id="result">
+                <div class="poll-result" id="div1"></div>
+                <div class="poll-result" id="div2"></div>
+                <div class="poll-result" id="div3"></div>
+                <div class="poll-result" id="div4"></div>
+            </div>
+
         </main>
 <?php include 'footer.php'?>

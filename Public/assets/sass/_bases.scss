@@ -46,6 +46,10 @@ p {
     left: 2vw;
 }
 
+#display {
+    display: none;
+}
+
 .hashtag {
     @include typoLato($small);
     padding: 0.5vh 1.5vh;
@@ -64,7 +68,6 @@ p {
     background-color: $white;
     color: red;
     font-weight: 700;
-    //border-radius: 30px;
 }
 
 #correct {
@@ -74,7 +77,6 @@ p {
     background-color: $white;
     color: green;
     font-weight: 700;
-    //border-radius: 30px;
 }
 
 // Header

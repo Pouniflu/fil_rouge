@@ -22,4 +22,9 @@ class PollController {
         $vote++;
         $newVote = $this->model->newVotes($vote);
     }
+
+    public function ajaxVotes(){
+        $allVotes = $this->model->getAllVotes();
+        echo json_encode($allVotes);
+    }
 }

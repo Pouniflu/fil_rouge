@@ -147,7 +147,7 @@
         margin: 3vh 0 2vh;
     }
 
-    div:first-of-type {
+    &>div:first-of-type {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -155,6 +155,29 @@
 
         form {
             margin-top: 4vh;
+        }
+    }
+
+    &>div:last-of-type {
+        div:first-of-type{
+            position: absolute;
+            top: 52vh;
+            left: 32vw;
+        }
+        div:nth-of-type(2){
+            position: absolute;
+            top: 52vh;
+            right: 32vw;
+        }
+        div:nth-of-type(3){
+            position: absolute;
+            bottom: 20vh;
+            left: 32vw;
+        }
+        div:last-of-type{
+            position: absolute;
+            bottom: 20vh;
+            right: 32vw;
         }
     }
 }

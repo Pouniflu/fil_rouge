@@ -54,7 +54,7 @@ p {
   left: 2vw;
 }
 
-.hidden {
+#display {
   display: none;
 }
 
@@ -221,14 +221,34 @@ footer {
 .poll-main section {
   margin: 3vh 0 2vh;
 }
-.poll-main div:first-of-type {
+.poll-main > div:first-of-type {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 70vw;
 }
-.poll-main div:first-of-type form {
+.poll-main > div:first-of-type form {
   margin-top: 4vh;
+}
+.poll-main > div:last-of-type div:first-of-type {
+  position: absolute;
+  top: 52vh;
+  left: 32vw;
+}
+.poll-main > div:last-of-type div:nth-of-type(2) {
+  position: absolute;
+  top: 52vh;
+  right: 32vw;
+}
+.poll-main > div:last-of-type div:nth-of-type(3) {
+  position: absolute;
+  bottom: 20vh;
+  left: 32vw;
+}
+.poll-main > div:last-of-type div:last-of-type {
+  position: absolute;
+  bottom: 20vh;
+  right: 32vw;
 }
 
 .button-after {
@@ -496,6 +516,12 @@ footer {
   border-radius: 30px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
+}
+
+.poll-result {
+  height: fit-content;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
 }
 
 .poll-title {

@@ -15,7 +15,7 @@ use App\Controller\ProfilController;
 use App\Controller\ThematiquesController;
 use App\Controller\PollsByThemController;
 use App\Controller\PollController;
-
+use App\Controller\ResultController;
 
 // 2. Création du nouveau "case"
 if(array_key_exists("page", $_GET)){
@@ -61,9 +61,20 @@ if(array_key_exists("page", $_GET)){
             $controller->renderIndex();
             break;
         case 'poll' :
-            $controller = new PollController();
-            $controller->renderIndex();
-            $controller->vote();
+            if(array_key_exists("function", $_GET)){
+                switch ($_GET["function"]){
+                    case 'vote' :
+                        $controller = new PollController();
+                        $controller->ajaxVotes();
+                        break;
+                }
+            } else {
+                $controller = new PollController();
+                $controller->renderIndex();
+                if(isset($_POST['ans'])){
+                    $controller->vote();
+                }
+            }
             break;
         case 'deconnexion' :
             session_start();
