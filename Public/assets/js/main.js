@@ -1,4 +1,5 @@
 // Page de profil
+// Test
 // Liste d'amis
 $("#open-list-friend").click(function(){
     $(".profil-main-list-friend").css("display", "flex");
